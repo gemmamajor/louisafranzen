@@ -1,6 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Unicase';
+</style>
+</style>
 /*
 	Prologue by HTML5 UP
 	html5up.net | @n33co
@@ -1568,8 +1570,8 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-family: 'Alygreya Sans', sans-serif;
+		font-size: 24pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -1587,7 +1589,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Alygreya Sans', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1605,20 +1607,30 @@
 		text-decoration: none;
 	}
 
-		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+	h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
+		color: #333;
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+	
+	@media screen and (max-width: 961px) {
+		h1 {
+			font-size: 2.2em;
 		}
+	}
 
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
 	}
 
-		h2.alt {
-			color: #888;
+		h1.alt, h2.alt {
+			color: #f7d3d9;
 		}
 
-			h2.alt strong {
+			h1.alt strong, h2.alt strong {
 				color: #666;
 			}
 
@@ -1998,7 +2010,7 @@
 		width: 375px;
 		height: 100%;
 		color: #fff;
-		background-color: #222629;
+		background-color: #8b8b8b;
 		/*background: #222629 url("images/overlay.png");*/
 		/*box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);*/
 		text-align: right;
@@ -2097,7 +2109,7 @@
 		#nav ul li a.active {
 			background: rgba(0, 0, 0, 0.15);
 			box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-			color: #fff;
+			color: #f7d3d9;
 		}
 
 			#nav ul li a.active span:before {
@@ -2155,7 +2167,7 @@
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-					color: inherit;
+					color: #5e423f;
 				}
 
 				#main > section.dark strong {
@@ -2179,7 +2191,7 @@
 			}
 
 			#main > section.one {
-				background-color: #222629;
+				background-color: #c99e97;
 				/*background-image: url("../../images/banner.jpg");*/
 			}
 			
@@ -2197,9 +2209,23 @@
 				background-color: #ecf1f1;
 			}
 
+			/* FAQs */
 			#main > section.four {
 				background-color: #e8edec;
-			}
+			}			
+				#main > section.four p {
+					text-align: left;
+					font-size: 0.8em;
+				}
+				#main > section.four ul {
+					list-style: circle;
+					text-align: left;
+					font-size: 0.8em;
+				}
+				#main > section.four h4 {
+					margin-bottom: 0;					
+				}			
+			
 
 /* Wide */
 
@@ -2578,5 +2604,6 @@
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+				
 
 	}
